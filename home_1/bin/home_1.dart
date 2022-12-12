@@ -2,8 +2,8 @@ import 'dart:math';
 
 void main() {
   // 1 задание
-  double hours = Random().nextDouble() * 24.00;
-  print(hours);
+  double hours = (Random().nextDouble() * 24.00).roundToDouble();
+  print('Время: $hours');
 
   if (hours >= 6.00 && hours < 19.00) {
     print('На улице светло');
